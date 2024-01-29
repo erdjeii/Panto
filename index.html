@@ -6,6 +6,7 @@
     <title>Panto</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -23,7 +24,10 @@
                     <li>Sofa</li>
                     <li>Lamp</li>
                 </ul>
-                <div class="carousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="carousel">
                     <div class="arrow__l">
                         <a class="left__arrow" href="#">&larr;</a>
                     </div>
@@ -62,7 +66,8 @@
                                 <div class="plus"></div>
                             </div>
                         </div>
-                    </div><div class="bottom__choice">
+                    </div>
+                    <div class="bottom__choice">
                         <img class="image__chair" src="image/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (2).png" alt="">
                         <p>Chair</p>
                         <h4>Anjay Chair</h4>
@@ -79,7 +84,8 @@
                                 <div class="plus"></div>
                             </div>
                         </div>
-                    </div><div class="bottom__choice">
+                    </div>
+                    <div class="bottom__choice">
                         <img class="image__chair" src="image/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (3).png" alt="">
                         <p>Chair</p>
                         <h4>Nyantuy Chair</h4>
@@ -101,7 +107,91 @@
                         <a class="right__arrow" href="#">&rarr;</a>
                     </div>
                 </div>
-                <a href="#" class="viewAll">View All <img src="image/grommet-icons_form-next-link.png" alt=""></a>
+                <a href="#" class="viewAll">View All <img src="image/grommet-icons_form-next-link.png" alt=""></a></div>
+                  <div class="swiper-slide">
+                    <div class="carousel">
+                        <div class="arrow__l">
+                            <a class="left__arrow" href="#">&larr;</a>
+                        </div>
+                        <div class="bottom__choice">
+                            <img class="image__chair" src="image/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark.png" alt="">
+                            <p>Chair</p>
+                            <h4>Sakarias Armchair</h4>
+                            <ul>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                            </ul>
+                            <div class="price">
+                                <p>$392</p>
+                                <div class="add">
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom__choice">
+                            <img class="image__chair" src="image/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (1).png" alt="">
+                            <p>Chair</p>
+                            <h4>Baltsar Chair</h4>
+                            <ul>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                            </ul>
+                            <div class="price">
+                                <p>$299</p>
+                                <div class="add">
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom__choice">
+                            <img class="image__chair" src="image/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (2).png" alt="">
+                            <p>Chair</p>
+                            <h4>Anjay Chair</h4>
+                            <ul>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                            </ul>
+                            <div class="price">
+                                <p>$519</p>
+                                <div class="add">
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom__choice">
+                            <img class="image__chair" src="image/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (3).png" alt="">
+                            <p>Chair</p>
+                            <h4>Nyantuy Chair</h4>
+                            <ul>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                                <li><img src="image/Star.png" alt=""></li>
+                            </ul>
+                            <div class="price">
+                                <p>$921</p>
+                                <div class="add">
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow__r">
+                  </div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                </div>
+                
+              </div>
             </div>
         </section>
         <section class="experiences">
@@ -201,5 +291,14 @@
         </div>
     </footer>
     <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".right__arrow",
+            prevEl: ".left__arrow",
+          },
+        });
+      </script>
 </body>
 </html>
