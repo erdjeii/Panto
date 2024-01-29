@@ -185,6 +185,9 @@ header{
     line-height: normal;
     text-align: center;
 }
+.swiper-horizontal {
+    height: 600px;
+}
 .choice__carousel{
     display: flex;
     justify-content: space-around;
@@ -291,6 +294,7 @@ header{
     display: flex;
     justify-content: space-between;
     position: relative;
+    top: 46px;
 }
 .arrow__l{
     width: 50px;
