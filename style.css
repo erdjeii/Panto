@@ -13,7 +13,6 @@
 }
 header{
     background: url(image/Rectangle\ 1441.png)center/cover no-repeat;
-    width: 1440px;
     height: 1084px;
 }
 .header__box{
@@ -29,9 +28,22 @@ header{
     font-size: 18px;
     font-style: normal;
     font-weight: 400; 
-    padding-right: 320px;
-    padding-left: 380px;
-    column-gap: 40px;
+    column-gap: 62px;
+}
+.header__box li:nth-child(1){
+    position: relative;
+}
+.header__box li:nth-child(1):after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    transform: rotate(135deg);
+    width: 5px;
+    height: 5px;
+    right: -15px;
+    top: 11px;
 }
 .nav-list__link{
     color: #FFF;
@@ -65,6 +77,20 @@ header{
 .cart{
     width: 34px;
     height: 34px;
+    position: relative;
+}
+.cart__count{
+    background-color: #E58411;
+    color: #FFF;
+    display: inline-block;
+    border-radius: 40px;
+    height: 22px;
+    padding: 0 3px;
+    line-height: 25px;
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    right: -2px;
 }
 .make h1{
     color: #FFF;
@@ -107,7 +133,6 @@ header{
     color: #FFF;
     width: 148px;
     height: 25px;
-    text-align: center;
     font-size: 18px;
     font-weight: 400;
 }
@@ -346,22 +371,22 @@ header{
     position: relative;
     left: 50%;
 }
-.experiences{
-    padding: 240px 0 220px;
+.experiences .container{
     display: flex;
-    align-items: center;
-    column-gap: 413px;
+}
+.experiences__box{
+    padding-top: 252px ;
 }
 .first__square{
-    width: 400px;
+    width: 344px;
     height: 422px;
     border-radius: 0 20px 20px 0;
     background: #f7f7f7;
     position: relative;
 }
 .second__square{
-    width: 495px;
-    height: 301px;
+    width: 253px;
+    height: 250px;
     border-radius: 20px;
     background: #f7f7f7;
     position: absolute;
@@ -369,7 +394,7 @@ header{
     left: 190px;
 }
 .third__square{
-    width: 555px;
+    width: 324px;
     height: 423px;
     border-radius: 49px;
     background: url("image/Rectangle\ 1447.png")center/cover no-repeat;
@@ -378,13 +403,16 @@ header{
     left: -163px;
 }
 .fourth__square{
-    width: 629px;
+    width: 395px;
     height: 445px;
     border-radius: 0 20px 20px 0;
     background: url("image/Rectangle\ 1446.png")center/cover no-repeat;
     position: absolute;
     top: -67px;
     left: -27px;
+}
+.best__exprerience{
+    margin-left: 180px;
 }
 .best__exprerience h4{
     color: #E58411;
@@ -394,6 +422,7 @@ header{
     line-height: normal;
     letter-spacing: 3.15px;
     text-transform: uppercase;
+    padding-top: 323px;
 }
 .best__exprerience h2{
     color: #1E1E1E;
@@ -423,29 +452,50 @@ header{
     font-weight: 400;
     line-height: 185%;
 }
-.materials{
-    padding: 100px 0 150px 508.5px;
-}
 .materials__box{
     display: flex;
     column-gap: 100px;
     align-items: center;
+    padding: 230px;
+}
+.best__exprerience1{
+    margin-left: -120px;
+}
+.best__exprerience1 h4{
+    color: #E58411;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3.15px;
+    text-transform: uppercase;
+}
+.best__exprerience1 h2{
+    width: 413px;
+    color: #1E1E1E;
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.best__exprerience1 p{
+    width: 556px;
 }
 .materialse__image{
     display: flex;
     column-gap: 42px;
+    margin-left: -100px;
 }
 .left__image img{
+    width: 190px;
     display: block;
     margin-bottom: 50px;
 }
 .right__image img{
+    width: 230px;
     position: relative;
     top: 135px;
     z-index: 1;
 }
 .right__square{
-    width: 287px;
+    width: 200px;
     height: 300px;
     border-radius: 20px 0;
     background: #f7f7f7;
@@ -456,6 +506,125 @@ header{
 .right__image{
     position: relative;
 }
+
+
+.carusel__end{
+    background: #FFF;
+}
+.our p{
+    color: #E58411;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3.15px;
+    text-transform: uppercase;
+    padding-top: 262px;
+}
+.our h3{
+    color: #1E1E1E;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.room__box{
+    display: flex;
+    justify-content: space-between;
+}
+.room__background{
+    background: url('image/unsplash_h2_3dL9yLpU.png')center/cover no-repeat;
+    width: 370px;
+    height: 476px;
+    padding: 252px 18px 18px;
+
+}
+.room__background2{
+    background: url('image/unsplash__HqHX3LBN18.png')center/cover no-repeat;
+    width: 370px;
+    height: 476px;
+    padding: 252px 18px 18px;
+}
+.room__background3{
+    background: url('image/unsplash_JaXs8Tk5Iww.png');
+    width: 370px;
+    height: 476px;
+    padding: 252px 18px 18px;
+}
+.bang{
+    width: 334px;
+    height: 206px;
+    border-radius: 18.118px;
+    background-color: #FFF;
+    backdrop-filter: blur(5.5px);
+    position: relative;
+    padding: 38px 40px 17px;
+}
+.ellipse{
+    width: 66px;
+    height: 66px;
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mini__ellipse{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('image/Ellipse\ 1131.png');
+}
+.mini__ellipse2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('image/Ellipse\ 1131\ \(1\).png');
+}
+.mini__ellipse3{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: url('image/Ellipse\ 1131\ \(2\).png');
+}
+.bang h5{
+    color: #1E1E1E;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.one{
+    color: #1E1E1E;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.6;
+    margin:5px 0 22px;
+} 
+.two{
+    width: 265px;
+    color: #1E1E1E;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+.bang ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+.bang li{
+    width: 14px;
+    height: 14px;
+    fill: rgba(0, 0, 0, 0.00);
+}
+
+/*-------------------------------footer--------------------*/
 footer{
     background: #f7f7f7;
     padding: 120px 0 56px;
