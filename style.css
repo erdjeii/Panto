@@ -13,7 +13,6 @@
 }
 header{
     background: url(image/Rectangle\ 1441.png)center/cover no-repeat;
-    width: 1440px;
     height: 1084px;
 }
 .header__box{
@@ -25,12 +24,11 @@ header{
 }
 .header__box ul{
     display: flex;
+    align-items: center;
     color: #FFF;
     font-size: 18px;
     font-style: normal;
     font-weight: 400; 
-    padding-right: 320px;
-    padding-left: 380px;
     column-gap: 40px;
 }
 .nav-list__link{
@@ -46,8 +44,6 @@ header{
     border-radius: 5px;
     cursor: pointer;
 }
-
-
 .wrapper{
     width: 18px;
     height: 18px;
@@ -107,7 +103,6 @@ header{
     color: #FFF;
     width: 148px;
     height: 25px;
-    text-align: center;
     font-size: 18px;
     font-weight: 400;
 }
@@ -294,7 +289,7 @@ header{
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 46px;
+    top: 57px;
 }
 .arrow__l{
     width: 50px;
@@ -303,8 +298,11 @@ header{
     background: #fff;
     position: absolute;
     top: 40%;
-    left: -25px;
-    
+    left: 0;   
+}
+.arrow__l:hover{
+    background: #1E1E1E;
+    transition: 0.5s;
 }
 .left__arrow{
     font-size: 35px;
@@ -315,6 +313,9 @@ header{
     transform: translate(-50%);
     color: #1E1E1E;
 }
+.left__arrow:hover{
+    color: #FFF;
+}
 .arrow__r{
     width: 50px;
     height: 50px;
@@ -322,7 +323,11 @@ header{
     background: #fff;
     position: absolute;
     top: 40%;
-    right: -25px;
+    right: 0;
+}
+.arrow__r:hover{
+    background: #1E1E1E;
+    transition: 0.5s;
 }
 .right__arrow{
     font-size: 35px;
@@ -332,6 +337,9 @@ header{
     bottom: 5px;
     transform: translate(-50%);
     color: #1E1E1E;
+}
+.right__arrow:hover{
+    color: #FFF;
 }
 .viewAll{
     margin-top: 50px;
