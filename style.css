@@ -24,6 +24,7 @@ header{
 }
 .header__box ul{
     display: flex;
+    align-items: center;
     color: #FFF;
     font-size: 18px;
     font-style: normal;
@@ -44,6 +45,7 @@ header{
     height: 5px;
     right: -15px;
     top: 11px;
+    column-gap: 40px;
 }
 .nav-list__link{
     color: #FFF;
@@ -58,8 +60,6 @@ header{
     border-radius: 5px;
     cursor: pointer;
 }
-
-
 .wrapper{
     width: 18px;
     height: 18px;
@@ -319,7 +319,7 @@ header{
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 46px;
+    top: 57px;
 }
 .arrow__l{
     width: 50px;
@@ -328,8 +328,11 @@ header{
     background: #fff;
     position: absolute;
     top: 40%;
-    left: -25px;
-    
+    left: 0;   
+}
+.arrow__l:hover{
+    background: #1E1E1E;
+    transition: 0.5s;
 }
 .left__arrow{
     font-size: 35px;
@@ -340,6 +343,9 @@ header{
     transform: translate(-50%);
     color: #1E1E1E;
 }
+.left__arrow:hover{
+    color: #FFF;
+}
 .arrow__r{
     width: 50px;
     height: 50px;
@@ -347,7 +353,11 @@ header{
     background: #fff;
     position: absolute;
     top: 40%;
-    right: -25px;
+    right: 0;
+}
+.arrow__r:hover{
+    background: #1E1E1E;
+    transition: 0.5s;
 }
 .right__arrow{
     font-size: 35px;
@@ -357,6 +367,9 @@ header{
     bottom: 5px;
     transform: translate(-50%);
     color: #1E1E1E;
+}
+.right__arrow:hover{
+    color: #FFF;
 }
 .viewAll{
     margin-top: 50px;
@@ -518,7 +531,6 @@ header{
     font-weight: 400;
     letter-spacing: 3.15px;
     text-transform: uppercase;
-    padding-top: 262px;
 }
 .our h3{
     color: #1E1E1E;
@@ -526,10 +538,12 @@ header{
     font-size: 42px;
     font-weight: 400;
     text-transform: capitalize;
+    margin: 5px 0 60px;
 }
 .room__box{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 244px;
 }
 .room__background{
     background: url('image/unsplash_h2_3dL9yLpU.png')center/cover no-repeat;
