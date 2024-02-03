@@ -1,25 +1,302 @@
-@media(max-width:1199){
+@media (max-width:1199px) {
     .container{
-        width: 1000px;
+        max-width: 1000px;
+    }
+    .panto__box{
+        column-gap: 50px;
+    }
+    .panto__right{
+        column-gap: 130px;
+    }
+    .cart{
+        right: 77px;
+    }
+    .room__box{
+        column-gap: 10px;
+    }
+    .header__box{
+        column-gap: 242px;
     }
 }
-@media(max-width:999){
-    .container{
-        width: 800px;
+@media (max-width:999px) {
+     .container{
+        max-width: 800px;
+    }
+    
+    .header__box{
+        column-gap: 143px;
+    }
+    
+    .cart {
+        right: 81px;
+    }
+    .hero__box{
+        display: block;
+        text-align: center;
+    }
+    .hero__box h2{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .bottom__choice {
+        width: 240px;
+    }
+    .best__exprerience{
+        margin-left: 105px;
+    }
+    .right__square{
+        display: none;
+    }
+    .right__image img {
+        display: none;
+    }
+    .first__square {
+        width: 232px;
+    }
+    .fourth__square{
+        width: 293px;
+    }
+    .third__square{
+        width: 241px;
+    }
+    .second__square{
+        width: 137px;
+    }
+    .materials__box{
+        column-gap: 20px;
+    }
+    .choose a {
+        margin-bottom: 30px;
+    }
+    
+    .choose1{
+        text-align: center;
+    }
+    .room__box{
+        flex-wrap: wrap;
+        row-gap: 30px;
+        align-items: center;
+    }
+    .panto__right{
+        column-gap: 50px;
     }
 }
-@media(max-width:799){
+
+
+@media (max-width:799px){
     .container{
-        width: 600px;
+        max-width: 600px;
+    }
+    .choose{
+        display: block;
+    }
+    .choose p{
+        max-width: 549px;
+    }
+    .cart{
+        right: 41px;
+        top: 41px;
+    }
+    .make h1{
+        font-size: 57px;
+    }
+    .make p {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .burger.actived{
+        background: none;
+    }
+    .burger.actived::after{
+        transform: rotate(-45deg);
+        top: 0;
+        transition: 0.5s;
+        color: azure;
+    }
+    .burger.actived::before{
+        transform: rotate(45deg);
+        top: 0;
+        transition: 0.5s;
+    }
+    .burger{
+        width: 30px;
+        height: 4px;
+        background:aquamarine;
+        position: fixed;
+        left: 51%;
+        transform: translate(-50%);
+        z-index: 30;
+        transition: 0.5s;
+    }
+    .burger::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background:aquamarine;
+        top: 7px;
+        transition: 0.5s;
+    }
+    .burger::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background: aquamarine;
+        top: -7px;
+        transition: 0.5s;
+    }
+    .experiences{
+        background: url("image/Rectangle\ 1446.png")center/cover no-repeat;
+    }
+    .experiences__box{
+        display: none;
+    }
+    .best__exprerience{
+        margin-left: 0;
+        text-align: center;
+    }
+    .best__exprerience h2{
+        width: 509px;
+        color: #fff;
+    }
+    .best__exprerience p {
+        color: #fff;
+    }
+    .best__exprerience h4{
+        padding: 100px 0 30px;
+    }
+    .more__info {
+        justify-content: start;
+        margin-bottom: 30px;
+    }
+    .room__box{
+        padding-left: 103px;
+    }
+    .best__exprerience1 h2 {
+        width: 315px;
+        font-size: 38px;
+    }
+    .best__exprerience1 p{
+        font-size: 16px;
+        margin: 10px 0 20px;
+    }
+    footer{
+        text-align: center;
+        padding: 54px 0 34px;
+    }
+    .panto__box{
+        display: block;
+        margin-bottom: 80px;
+    }
+    .panto__left p {
+        width: 567px;
+    }
+    .panto__right{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 68px;
+    }
+    .nav-list__link{
+        color: aquamarine;
+    }
+    .nav{
+        display: none;
+        color: aquamarine;
+        font-size: 28px;
+        font-weight: 800;
+    }
+    .nav.actived{
+        display: flex;
+        height: 100vh;
+        background: #80808080;
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        row-gap: 40px;
+        right: 0;
+        z-index: 20;
     }
 }
-@media(max-width:599){
+
+@media (max-width:599px){
     .container{
-        width: 400px;
+        max-width: 400px;
+    }
+    .burger{
+        left: 50%;
+    }
+    .cart{
+        right: 44px;
+    }
+    .make h1{
+        font-size: 38px;
+    } 
+    .make p{
+        font-size: 16px;
+    }
+    header{
+        height: 100vh;
+    }
+    .make{
+        margin-top: 70px;
+    }
+    .best__exprerience h2{
+        width: 365px;
+        font-size: 36px;
+    }
+    .best__exprerience p{
+        font-size: 14px;
+    }
+    .materialse__image{
+        display: none;
+    }
+    .materials{
+        background: url("image/Rectangle\ 1450.png")center/cover no-repeat;
+        padding-top: 80px;
+        margin-top: 50px;
+    }
+    .best__exprerience1 h2{
+        color: #fff;
+        text-align: center;
+    }
+    .best__exprerience1 p{
+        color: #fff;
+    }
+    .room__box{
+        padding-left: 0;
+    }
+    .carusel__end{
+        padding: 60px 0;
+    }
+    .panto__left p{
+        width: 367px;
     }
 }
-@media(max-width:399){
+
+
+@media (max-width:399px){
     .container{
-        width: 85%;
+        max-width: 85%;
     }
-}
+    .panto__left p {
+        width: 274px;
+    }
+    .panto__right{
+        column-gap: 2px;
+    }
+    .teams__box {
+        column-gap: 8px;
+    }
+    .best__exprerience h2{
+        width: 277px;
+    }
+    .best__exprerience1 h2 {
+        width: 248px;
+    }
+} 
